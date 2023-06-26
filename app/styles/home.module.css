@@ -1,0 +1,47 @@
+
+/*waves effect */
+.custom-shape-divider-bottom-1681647578 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1681647578 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 135px;
+}
+
+.custom-shape-divider-bottom-1681647578 .shape-fill {
+    fill: rgb(34 32 86 / 39%);
+}
+
+
+@media screen and (max-width:768px) {
+
+    .hero_content{
+      order: 1;
+    }
+
+
+    .hero_image{
+        justify-content: center;
+        order: 0;
+    }
+
+    .hero_image img{
+        width: 40%;
+    }
+
+
+    .custom-shape-divider-bottom-1681647578 {
+      display: none;
+     }
+
+
+}
+
