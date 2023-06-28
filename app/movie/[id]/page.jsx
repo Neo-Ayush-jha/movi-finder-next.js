@@ -20,15 +20,15 @@ const page = async ({ params }) => {
   const main_data = data[0].details;
   return (
     <>
-      <div className='flex-1 flex flex-col px-14 py-16 rounded bg-slate-300 gap-2 h-[97vh]'>
+      <div className='flex-1 flex flex-row px-14 py-16 rounded bg-slate-300 gap-2 h-[97vh]'>
         <h1 className='font-bold text-4xl'> Netflix \ <span> {main_data.type} </span></h1>
         <div className="flex flex-row px-10">
-          <div className="w-6/12">
+          <div className="w-8/12 justify-center items-center">
             <Image src={main_data.backgroundImage.url} alt={main_data.title} width={800} height={500} />
           </div>
-          <div className="w-6/12">
-            <p className='text-slate-900 text-bold text-6xl'>Title: {main_data.title} </p>
-            <p className="text-2xl my-4"><span className="font-bold">Discription:</span> {main_data.synopsis}</p>
+          <div className="w-6/12 justify-center items-center">
+            <p className='text-slate-900 text-bold text-3xl'>Title: {main_data.title} </p>
+            <p className="text-1xl my-4"><span className="font-bold">Discription:</span> {main_data.synopsis}</p>
             <div className="flex justify-end">
               <Link href="/movie" className='bg-teal-600 text-white px-4 py-3 text-decoration-none hover:bg-[#055160] text-white font-bold text-3xl rounded'>Back</Link>
 
