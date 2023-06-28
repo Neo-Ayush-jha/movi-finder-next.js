@@ -14,7 +14,7 @@ function Homepage({ title, image }) {
             <p className="text-sleat-400">From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
               our
               selection of the latest and greatest movies, and find your new favorite today.</p>
-            <Link href="/login">
+            <Link href="/movie">
               <button className="rounded-full bg-slate-900 hover:bg-slate-300 hover:text-slate-900 text-lg font-bold border-black text-slate-300 px-3 py-2 justify-center items-center" type='submit'>Explore Movies</button>
             </Link>
           </div>
