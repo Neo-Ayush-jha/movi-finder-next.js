@@ -10,11 +10,11 @@ function Homepage({ title, image }) {
       <div className='flex justify-center gap-2 items-center' style={{ backgroundImage: "url(/header.jpg)", backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', height: '100vh' }}>
         <div className="flex flex-row w-10/12 justify-center items-center">
           <div className="flex flex-col w-6/12">
-            <h2 className="font-bold text-6xl ">{title}</h2>
+            <h2 className="font-bold xl:text-6xl md:text-3xl sm-text-1xl">{title}</h2>
             <p className="text-sleat-400">From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
               our
               selection of the latest and greatest movies, and find your new favorite today.</p>
-            <Link href="/movie">
+            <Link href="/login">
               <button className="rounded-full bg-slate-900 hover:bg-slate-300 hover:text-slate-900 text-lg font-bold border-black text-slate-300 px-3 py-2 justify-center items-center" type='submit'>Explore Movies</button>
             </Link>
           </div>

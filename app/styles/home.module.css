@@ -45,3 +45,13 @@
 
 }
 
+.hidden {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .hidden {
+      display: block;
+    }
+  }
+  
