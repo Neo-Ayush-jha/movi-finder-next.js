@@ -14,6 +14,6 @@ export async function POST(req){
         await userData.save();
         return NextResponse.json({userData,"msg":"User login"})
     }catch(e){
-        throw NextResponse.json({"msg":"Something went wrong."})
+        throw NextResponse.json(e)
     }
 }

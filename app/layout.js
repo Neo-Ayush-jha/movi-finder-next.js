@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from './components/Header';
 import { Roboto } from 'next/font/google'
 import Footer from './components/Footer';
- 
+import Link from 'next/link';
+
 const roboto = Roboto({
   weight: '400',
   subsets: ['latin'],
@@ -20,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={roboto.className}>
-      <body className={inter.className}><Header/>{children}<Footer/></body>
+      <body className={inter.className}><Header />{children}<Footer /></body>
     </html>
   )
 }
